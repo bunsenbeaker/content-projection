@@ -1,0 +1,23 @@
+.content {
+    width: 600px;
+    height: 400px;
+    background-color: green;
+
+    h1{
+        color: yellow;
+        margin: 10px;
+    }
+
+    .buttonspane {
+        padding: 10px;
+        background-color: hotpink;
+        margin: 10px;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px;
+        }
+    }
+
+}

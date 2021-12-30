@@ -1,0 +1,13 @@
+<div class="content">
+    <h1>My Amazing Player</h1>
+    <div class="buttonspane">
+        <ul>
+			<ng-container *ngFor="let button of customButtons">
+				<li>
+					<ng-container [ngTemplateOutlet]="button.template"></ng-container>
+				</li>
+			</ng-container>
+		</ul>
+    </div>
+</div>
+
