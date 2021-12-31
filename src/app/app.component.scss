@@ -1,0 +1,39 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+    .content {
+        margin-left: 30px;   
+    }
+    .nav{
+        background-color: purple;
+        color: yellowgreen;
+        font-size: 1.25rem;
+        height: min-content;
+
+        .samples{
+            padding: 10px;
+            margin: 0;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 10px;
+                border: 1px solid red;
+                width: 100%;
+                box-sizing: border-box;
+                cursor: pointer;
+                margin-bottom: 10px;
+
+                &:hover {
+                    transform: translateY(-1px);
+                }
+                &:active {
+                    transform: translateY(1px);
+                    color: red;
+                }
+            }
+        }
+    }
+}

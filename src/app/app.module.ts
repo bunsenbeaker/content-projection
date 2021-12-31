@@ -11,6 +11,12 @@ import { ParentMultiComponent } from './multi-slot/parent-multi/parent-multi.com
 import { ContentChildrenComponent } from './content-children/content-children.component';
 import { CustomButtonDirective } from './content-children/custom-button.directive';
 import { PlayerComponent } from './content-children/player/player.component';
+import { FinalExampleComponent } from './final-example/final-example.component';
+import { MapComponent } from './final-example/map/map.component';
+import { TargetsContextMenuComponent } from './final-example/targets-context-menu/targets-context-menu.component';
+import { PolygonsContextMenuComponent } from './final-example/polygons-context-menu/polygons-context-menu.component';
+import { PolygonComponent } from './final-example/polygon/polygon.component';
+import { TargetComponent } from './final-example/target/target.component';
 
 
 const routes: Routes = [
@@ -25,6 +31,10 @@ const routes: Routes = [
   {
     path: 'content-children',
     component: ContentChildrenComponent
+  },
+  {
+    path: 'final',
+    component: FinalExampleComponent
   }
 ]; 
 
@@ -38,7 +48,13 @@ const routes: Routes = [
     ParentMultiComponent,
     ContentChildrenComponent,
     CustomButtonDirective,
-    PlayerComponent
+    PlayerComponent,
+    FinalExampleComponent,
+    MapComponent,
+    TargetsContextMenuComponent,
+    PolygonsContextMenuComponent,
+    PolygonComponent,
+    TargetComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,9 @@
 .content {
     padding: 20px;
-    background-color:purple;
-    color: white;
     width: min-content;
 
+    .clickedcontent{
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
 }

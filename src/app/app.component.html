@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<div class="container">
+    <div class="nav">
+        <ul class="samples">
+            <li [routerLink]="['/single-slot']">single-slot</li>
+            <li [routerLink]="['/multi-slot']">multi-slot</li>
+            <li [routerLink]="['/content-children']">content children</li>
+            <li [routerLink]="['/final']">final</li>
+        </ul>
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
