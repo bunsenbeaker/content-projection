@@ -11,7 +11,10 @@ import { ParentMultiComponent } from './multi-slot/parent-multi/parent-multi.com
 import { ContentChildrenComponent } from './content-children/content-children.component';
 import { CustomButtonDirective } from './content-children/custom-button.directive';
 import { PlayerComponent } from './content-children/player/player.component';
-import { FinalExampleComponent } from './final-example/final-example.component';
+import { SelectiveContentComponent } from './selective-content/selective-content.component';
+import { SelectiveContentParentComponent } from './selective-content/selective-content-parent/selective-content-parent.component';
+import { NamedContentDirective } from './selective-content/tagged-content.directive';
+import { TemplatedChildComponent } from './selective-content/templated-child/templated-child.component';
 
 
 const routes: Routes = [
@@ -28,8 +31,8 @@ const routes: Routes = [
     component: ContentChildrenComponent
   },
   {
-    path: 'final',
-    component: FinalExampleComponent
+    path: 'selective',
+    component: SelectiveContentComponent
   }
 ]; 
 
@@ -44,7 +47,10 @@ const routes: Routes = [
     ContentChildrenComponent,
     CustomButtonDirective,
     PlayerComponent,
-    FinalExampleComponent  
+    SelectiveContentComponent,
+    SelectiveContentParentComponent,
+    NamedContentDirective,
+    TemplatedChildComponent
   ],
   imports: [
     BrowserModule,

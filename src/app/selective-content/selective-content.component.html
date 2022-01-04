@@ -1,0 +1,13 @@
+<h1>Selective Content</h1>
+<app-selective-content-parent>
+    <app-child *appTaggedContent="'child1tag'" name="child A"></app-child>
+    <app-child *appTaggedContent="'child2tag'" name="child B"></app-child>
+    <app-child *appTaggedContent="'child3tag'" name="child C"></app-child>
+    <app-child *appTaggedContent="'child4tag'" name="child D"></app-child>  
+    <app-templated-child name="child E" (childClicked)="clicked_child=$event"></app-templated-child>
+    <app-templated-child name="child F" (childClicked)="clicked_child=$event"></app-templated-child>  
+    <app-templated-child name="child G" (childClicked)="clicked_child=$event"></app-templated-child>    
+</app-selective-content-parent>
+<p>
+    clicked child: {{clicked_child}}
+</p>

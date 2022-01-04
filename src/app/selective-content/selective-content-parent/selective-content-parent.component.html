@@ -1,0 +1,29 @@
+<div class="content">
+    <p>I'm a PARENT component with multiple projected children</p>
+    <p>
+        Clicked Child is: {{clicked_child}}
+    </p>
+    
+    
+    <div class="selectbytag">
+        <p>Select child to display by its tag :</p>
+        <ul class="optionslist">
+            <li *ngFor="let child of childrenByTag">       
+                <input type="radio" name="buttonslist" [id]="child.tag" (change)="loadContentByTag(child.tag)">
+                <label [for]="child.tag">{{child.tag}}</label>
+            </li>
+        </ul>
+    </div> 
+    <div class="selectbytag">
+        <p>Select child to display by its name :</p>
+        <ul class="optionslist">
+            <li *ngFor="let child of children">       
+                <input type="radio" name="buttonslist2" [id]="child.name" (change)="loadContentByName(child.name)">
+                <label [for]="child.name">{{child.name}}</label>
+            </li>
+        </ul>
+    </div> 
+    <div class="selectedchild" >
+        <ng-container [ngTemplateOutlet]="selectedChildTemplate"></ng-container>
+    </div>
+</div>
