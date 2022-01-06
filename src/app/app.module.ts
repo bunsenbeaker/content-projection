@@ -19,6 +19,9 @@ import { NestedComponent } from './nested/nested.component';
 import { NestedParentComponent } from './nested/nested-parent/nested-parent.component';
 import { NestedChildComponent } from './nested/nested-child/nested-child.component';
 import { InnerChildComponent } from './nested/inner-child/inner-child.component';
+import { DynamicComponent } from './dynamic/dynamic.component';
+import { DynamicParentComponent } from './dynamic/dynamic-parent/dynamic-parent.component';
+import { DynamicContentHostDirective } from './dynamic/dynamic-content-host.directive';
 
 
 const routes: Routes = [
@@ -41,6 +44,10 @@ const routes: Routes = [
   {
     path: 'nested',
     component: NestedComponent
+  },
+  {
+    path:'dynamic',
+    component: DynamicComponent
   }
 ]; 
 
@@ -62,7 +69,10 @@ const routes: Routes = [
     NestedComponent,
     NestedParentComponent,
     NestedChildComponent,
-    InnerChildComponent
+    InnerChildComponent,
+    DynamicComponent,
+    DynamicParentComponent,
+    DynamicContentHostDirective
   ],
   imports: [
     BrowserModule,
