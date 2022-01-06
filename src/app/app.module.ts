@@ -15,6 +15,10 @@ import { SelectiveContentComponent } from './selective-content/selective-content
 import { SelectiveContentParentComponent } from './selective-content/selective-content-parent/selective-content-parent.component';
 import { NamedContentDirective } from './selective-content/tagged-content.directive';
 import { TemplatedChildComponent } from './selective-content/templated-child/templated-child.component';
+import { NestedComponent } from './nested/nested.component';
+import { NestedParentComponent } from './nested/nested-parent/nested-parent.component';
+import { NestedChildComponent } from './nested/nested-child/nested-child.component';
+import { InnerChildComponent } from './nested/inner-child/inner-child.component';
 
 
 const routes: Routes = [
@@ -33,6 +37,10 @@ const routes: Routes = [
   {
     path: 'selective',
     component: SelectiveContentComponent
+  },
+  {
+    path: 'nested',
+    component: NestedComponent
   }
 ]; 
 
@@ -50,7 +58,11 @@ const routes: Routes = [
     SelectiveContentComponent,
     SelectiveContentParentComponent,
     NamedContentDirective,
-    TemplatedChildComponent
+    TemplatedChildComponent,
+    NestedComponent,
+    NestedParentComponent,
+    NestedChildComponent,
+    InnerChildComponent
   ],
   imports: [
     BrowserModule,
