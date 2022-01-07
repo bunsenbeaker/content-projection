@@ -1,5 +1,5 @@
 Angular Content Projection Exampled
-Starting at the very basics and moving on to more vomplex scenarios.
+Starting at the very basics and moving on to more complex scenarios.
 Examples include:
 * Single slot
 * Multiple slots
