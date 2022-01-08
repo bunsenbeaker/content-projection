@@ -10,7 +10,7 @@ export class TemplatedChildComponent implements OnInit {
   @Input() name:string;
   @Output() childClicked:EventEmitter<string>=new EventEmitter();
 
-	@ViewChild(TemplateRef, { static: true }) template: TemplateRef<any>;
+	@ViewChild(TemplateRef) template: TemplateRef<any>;
   
   constructor() { }
 
